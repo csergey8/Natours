@@ -38,17 +38,17 @@ body {
     position: relative;
 }
 
-.logo-box{
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -63,23 +63,21 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-delay: .1s;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1.74rem;
-
     animation: moveInRight 1s;
 }
 
@@ -88,39 +86,34 @@ body {
         opacity: 0;
         transform: translateX(-10rem)
     }
-
     70% {
         transform: translate(1rem);
     }
-
     100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveInRight{
+@keyframes moveInRight {
     0% {
         opacity: 0;
         transform: translateX(10rem)
     }
-
     70% {
         transform: translate(-1rem);
     }
-
     100% {
         opacity: 1;
         transform: translate(0);
     }
 }
 
-@keyframes moveInBottom{
+@keyframes moveInBottom {
     0% {
         opacity: 0;
         transform: translateY(3rem)
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -141,15 +134,15 @@ body {
 
 .btn:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
     transform: translate(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -167,7 +160,7 @@ body {
     transition: all .3s linear;
 }
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
@@ -176,7 +169,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom 1s linear .75s;
     animation-fill-mode: backwards;
 }
